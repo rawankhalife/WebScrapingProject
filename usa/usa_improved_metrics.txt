@@ -1,0 +1,34 @@
+
+IMPROVED MODEL PERFORMANCE REPORT - USA
+============================================================
+
+BEST MODEL: XGBoost
+
+PERFORMANCE METRICS:
+RMSE: 258,000.12
+MAE:  181,813.46
+R²:   0.5823
+CV Score: 0.3570
+
+BEST PARAMETERS:
+{'subsample': 0.7, 'reg_lambda': 0, 'reg_alpha': 0.5, 'n_estimators': 1500, 'min_child_weight': 5, 'max_depth': 4, 'learning_rate': 0.01, 'colsample_bytree': 0.9}
+
+DATASET INFO:
+Original shape: (3515, 145)
+Final features: 144
+Training samples: 2812
+Test samples: 703
+
+ALL MODEL COMPARISON:
+
+XGBoost:
+  RMSE: 258,000.12
+  MAE:  181,813.46
+  R²:   0.5823
+  CV:   0.3570
+
+RandomForest:
+  RMSE: 260,479.00
+  MAE:  183,157.93
+  R²:   0.5742
+  CV:   0.3644
