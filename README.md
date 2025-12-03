@@ -10,28 +10,6 @@ The dashboard allows users to enter property details and instantly receive a pre
 
 ---
 
-## 📂 Repository Structure  
-
-├── EDA/ # Exploratory Data Analysis notebooks
-├── iraq/ # Iraq data + trained models
-├── lebanon/ # Lebanon data + trained models
-├── usa/ # USA data + trained models
-│
-├── Iraq_scraper.py # Iraq web scraper
-├── Lebanon_scrapper.py # Lebanon web scraper
-├── USA_scraper.py # USA web scraper
-│
-├── improved_cleaning.py # Cleaning & preprocessing functions
-├── feature_engineering.py # Feature engineering pipeline
-├── improved_models.py # Model training scripts
-├── dashboard.py # Streamlit dashboard app
-│
-├── requirements.txt # Dependencies
-└── README.md
-
-
----
-
 
 ## Web Scraping
 
