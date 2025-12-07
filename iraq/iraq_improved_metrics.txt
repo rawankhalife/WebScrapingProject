@@ -5,30 +5,30 @@ IMPROVED MODEL PERFORMANCE REPORT - IRAQ
 BEST MODEL: XGBoost
 
 PERFORMANCE METRICS:
-RMSE: 33,996.70
-MAE:  19,765.20
-R²:   0.8282
-CV Score: 0.2337
+RMSE: 33,711.35
+MAE:  20,099.10
+R²:   0.8311
+CV Score: 0.2331
 
 BEST PARAMETERS:
-{'subsample': 0.9, 'reg_lambda': 0, 'reg_alpha': 0.1, 'n_estimators': 1500, 'min_child_weight': 7, 'max_depth': 7, 'learning_rate': 0.01, 'colsample_bytree': 0.7}
+{'subsample': 0.9, 'reg_lambda': 0.1, 'reg_alpha': 0.5, 'n_estimators': 500, 'min_child_weight': 3, 'max_depth': 5, 'learning_rate': 0.05, 'colsample_bytree': 0.8}
 
 DATASET INFO:
-Original shape: (3522, 173)
-Final features: 172
+Original shape: (3522, 148)
+Final features: 147
 Training samples: 2817
 Test samples: 705
 
 ALL MODEL COMPARISON:
 
 XGBoost:
-  RMSE: 33,996.70
-  MAE:  19,765.20
-  R²:   0.8282
-  CV:   0.2337
+  RMSE: 33,711.35
+  MAE:  20,099.10
+  R²:   0.8311
+  CV:   0.2331
 
 RandomForest:
-  RMSE: 36,054.59
-  MAE:  20,006.54
-  R²:   0.8068
-  CV:   0.2353
+  RMSE: 36,118.67
+  MAE:  20,014.12
+  R²:   0.8061
+  CV:   0.2356

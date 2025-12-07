@@ -416,15 +416,13 @@ def add_features(df):
         # Create dummies only for values that exist
         dummies = pd.get_dummies(df["type"], prefix="ptype", dtype=int)
 
-        # Ensure ALL expected columns exist (fill missing with 0)
         for ptype in types:
-            col_name = f"ptype_{ptype}"
+            col_name = f"ptype_{ptype.lower().strip()}"  # Make lowercase!
             if col_name not in dummies.columns:
                 dummies[col_name] = 0
 
         # Concatenate and drop original
         df = pd.concat([df, dummies], axis=1)
-        # df = df.drop(columns=["type"])py
 
     if "city" in df.columns:
         # Normalize the values
@@ -435,7 +433,7 @@ def add_features(df):
 
         # Ensure ALL expected columns exist (fill missing with 0)
         for pcity in cities:
-            col_name = f"pcity_{pcity}"
+            col_name = f"pcity_{pcity.lower().strip()}"  # Make lowercase!
             if col_name not in dummies.columns:
                 dummies[col_name] = 0
 
@@ -641,9 +639,14 @@ def add_features(df):
     # Create polynomial features
     numeric_df = create_polynomial_features(numeric_df, numeric_df.columns)
 
+    # ✅ ADD THIS: Drop columns that are all zeros (features that don't exist in this country)
+    cols_to_drop = [col for col in df.columns if (df[col] == 0).all()]
+    if cols_to_drop:
+        print(f"Dropping {len(cols_to_drop)} all-zero columns: {cols_to_drop[:10]}...")
+        df = df.drop(columns=cols_to_drop)
+
     # END
     return df
-
 
 if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.abspath(__file__))

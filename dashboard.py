@@ -451,12 +451,6 @@ with st.sidebar:
         st.metric("Price/SqFt", f"${metrics['price_per_sqft']:.0f}")
         st.markdown("---")
 
-    st.markdown("### 📈 Model Performance")
-    st.metric("🇮🇶 Iraq", "82.82%", "R² Score")
-    st.metric("🇱🇧 Lebanon", "74.95%", "R² Score")
-    st.metric("🇺🇸 USA", "58.23%", "R² Score")
-
-    st.markdown("---")
     st.markdown("### 💡 Quick Tips")
     st.info(
         "✓ Fill all property details accurately\n\n✓ Select relevant amenities\n\n✓ Provide detailed description"

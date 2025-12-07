@@ -5,30 +5,30 @@ IMPROVED MODEL PERFORMANCE REPORT - LEBANON
 BEST MODEL: XGBoost
 
 PERFORMANCE METRICS:
-RMSE: 172,326.55
-MAE:  111,923.48
-R²:   0.7495
-CV Score: 0.3117
+RMSE: 168,782.06
+MAE:  110,727.82
+R²:   0.7597
+CV Score: 0.3104
 
 BEST PARAMETERS:
 {'subsample': 0.9, 'reg_lambda': 0.1, 'reg_alpha': 0, 'n_estimators': 2000, 'min_child_weight': 1, 'max_depth': 5, 'learning_rate': 0.1, 'colsample_bytree': 0.9}
 
 DATASET INFO:
-Original shape: (2609, 355)
-Final features: 354
+Original shape: (2609, 330)
+Final features: 329
 Training samples: 2087
 Test samples: 522
 
 ALL MODEL COMPARISON:
 
 XGBoost:
-  RMSE: 172,326.55
-  MAE:  111,923.48
-  R²:   0.7495
-  CV:   0.3117
+  RMSE: 168,782.06
+  MAE:  110,727.82
+  R²:   0.7597
+  CV:   0.3104
 
 RandomForest:
-  RMSE: 200,092.02
-  MAE:  130,536.10
-  R²:   0.6623
-  CV:   0.3437
+  RMSE: 200,732.93
+  MAE:  130,885.09
+  R²:   0.6601
+  CV:   0.3436
